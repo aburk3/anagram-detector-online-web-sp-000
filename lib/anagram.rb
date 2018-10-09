@@ -2,7 +2,7 @@
 require 'pry'
 class Anagram
   
-  attr_accessor :word :word_array_sorted :some_word_array :match_array
+  attr_accessor :word, :word_array_sorted, :some_word_array, :match_array
   
   def initialize(word)
     @word = word 
