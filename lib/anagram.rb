@@ -6,19 +6,19 @@ class Anagram
   
   def initialize(word)
     @word = word 
-    
   end
   
   def check_for_match(possible_anagrams)
     some_word_array = []
     
     possible_anagrams.detect do |some_word|
-    some_word_array.clear
-    some_word_array = some_word.split("").sort!
-    # binding.p ry
-    @word_array_sorted = @word.split("").sort
-    @some_word_array == word_array_sorted
-    # binding.pry
+      some_word_array.clear
+      some_word_array = some_word.split("").sort!
+      # binding.p ry
+      @word_array_sorted = @word.split("").sort
+      @some_word_array == word_array_sorted
+      # binding.pry
+    end
   end
   
   def match(possible_anagrams)
