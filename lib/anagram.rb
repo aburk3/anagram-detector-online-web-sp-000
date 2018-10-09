@@ -9,7 +9,7 @@ class Anagram
     
   end
   
-  def check_for_match
+  def check_for_match do
     some_word_array = []
     
     possible_anagrams.detect do |some_word|
@@ -28,9 +28,6 @@ class Anagram
     else
         @match_array
     end
-    
-      
-      
   end
   
 end
