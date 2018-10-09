@@ -25,7 +25,7 @@ class Anagram
     @match_array = []
     if check_for_match do
         @match_array << @some_word_array
-      else
+    else
         @match_array
     end
     
