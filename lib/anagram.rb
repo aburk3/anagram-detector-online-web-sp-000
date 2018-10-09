@@ -9,18 +9,21 @@ class Anagram
     
   end
   
-  def match(possible_anagrams)
+  def check_for_match
     some_word_array = []
     match_array = []
     
-    match_array << possible_anagrams.detect do |some_word|
-      some_word_array.clear
-      some_word_array = some_word.split("").sort!
-      # binding.p ry
-      word_array_sorted = @word.split("").sort
-      some_word_array == word_array_sorted
-      # binding.pry
-      
+    possible_anagrams.detect do |some_word|
+    some_word_array.clear
+    some_word_array = some_word.split("").sort!
+    # binding.p ry
+    word_array_sorted = @word.split("").sort
+    some_word_array == word_array_sorted
+    # binding.pry
+  end
+  
+  def match(possible_anagrams)
+      if 
     end
     
     match_array
