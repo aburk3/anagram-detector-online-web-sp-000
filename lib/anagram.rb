@@ -13,7 +13,7 @@ class Anagram
     some_word_array = []
     match_array = []
     
-    if possible_anagrams.detect do |some_word|
+    match_array << possible_anagrams.detect do |some_word|
       some_word_array.clear
       some_word_array = some_word.split("").sort!
       # binding.p ry
