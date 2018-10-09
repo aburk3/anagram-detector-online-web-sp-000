@@ -15,7 +15,7 @@ class Anagram
       some_word_array.clear
       some_word_array = some_word.split("").sort!
       # binding.pry
-      @word_array_sorted = @word.split("").sort
+      @word_array_sorted = @word.split("").sort!
       @some_word_array == word_array_sorted
       # binding.pry
     end
