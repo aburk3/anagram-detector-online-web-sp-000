@@ -2,7 +2,7 @@
 require 'pry'
 class Anagram
   
-  attr_accessor :word :word_array_sorted :some_word_array
+  attr_accessor :word :word_array_sorted :some_word_array :match_array
   
   def initialize(word)
     @word = word 
@@ -11,7 +11,6 @@ class Anagram
   
   def check_for_match
     some_word_array = []
-    match_array = []
     
     possible_anagrams.detect do |some_word|
     some_word_array.clear
@@ -23,11 +22,13 @@ class Anagram
   end
   
   def match(possible_anagrams)
-      if check_for_match do
-        
+    @match_array = []
+    if check_for_match do
+        @match_array << @some_word_array
+      else
+        @match_array
     end
     
-    match_array
       
       
   end
